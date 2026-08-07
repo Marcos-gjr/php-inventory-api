@@ -20,7 +20,6 @@ COPY . .
 
 RUN composer dump-autoload --optimize
 
-# Garante permissão do diretório para o usuário não-root
 RUN chown -R www-data:www-data /var/www/html
 
 USER www-data
